@@ -1,0 +1,148 @@
+body {
+    background: #fff;
+    color: #333;
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+}
+
+.container {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.barbell-container {
+    height: 109px;
+}
+
+.barbell.empty {
+    transform: translateY(90px);
+}
+
+.weight {
+    background: radial-gradient(circle, #666666, #444444);
+    border: 2px solid #000000;
+    border-radius: 10%;
+    display: inline-block;
+    height: 100px;
+    margin: 0 1px;
+    width: 25px;
+}
+
+.bar {
+    background: radial-gradient(#ffffff, #bbbbbb);
+    border: 2px solid #000000;
+    bottom: 40px;
+    display: inline-block;
+    height: 20px;
+    margin: 0 1px;
+    position: relative;
+    width: 300px;
+}
+
+.collar {
+    border: 2px solid #000000;
+    bottom: 40px;
+    display: inline-block;
+    height: 20px;
+    margin: 0 1px;
+    position: relative;
+    width: 25px;
+}
+
+.collar.left {
+    background: radial-gradient(at right, #ffffff, #bbbbbb);
+}
+
+.collar.right {
+    background: radial-gradient(at left, #ffffff, #bbbbbb);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+input, button {
+    outline: none;
+}
+
+button#add-weight {
+    background: none;
+    border: 0;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    margin: 10px 0 0;
+    cursor: pointer;
+}
+
+button#add-weight:hover {
+    color: #0FC57C;
+}
+
+h3 {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 30px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+input[type="number"] {
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    -moz-appearance: textfield;
+}
+
+input[type="number"].error {
+    border: 1px solid red;
+}
+
+input[type="number"]:focus {
+    color: #333;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+label[for='weight'], label[for='weight-input'] {
+    display: block;
+    margin: 0 0 20px;
+}
+
+li {
+    list-style: none;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+li > label {
+    position: absolute;
+    top: 44%;
+    left: 25%;
+    color: lightgray;
+    font-weight: 700;
+}
+
+.error-label {
+    display: none;
+}
+
+.error + .error-label {
+    display: block;
+    color: red;
+}
+
+
+
+
+
